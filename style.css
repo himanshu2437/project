@@ -1,0 +1,59 @@
+body, html {
+ margin: 0; padding: 0; height: 100%; font-family: Arial, sans-serif; background: #e0f4fd;
+}
+#logo-background {
+ position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -2;
+ background: url('create a stylish log.png') no-repeat center center fixed;
+ background-size: contain; opacity: 0.21;
+}
+#background3d {
+ position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; background: transparent;
+}
+header {
+ width: 100vw; height: 62px; background: #1f6aad; display: flex; align-items: center;
+ justify-content: flex-start; box-shadow: 0 2px 8px #aaa2; padding-left: 24px; gap: 18px;
+ position: fixed; top: 0; left: 0; z-index: 5;
+}
+.main-logo { height: 38px; width: 46px; border-radius: 8px; }
+.logo-text { font-size: 25px; color: #fff; font-weight: bold; }
+.header-actions { margin-left: auto; display: flex; gap: 16px; }
+#main-container { margin-top: 88px; }
+#login-box, #register-box, #forgot-box {
+ width: 340px; margin: 100px auto; padding: 24px; background: white; border-radius: 8px;
+ box-shadow: 0 0 16px rgba(0,0,0,0.15); text-align: center;
+}
+#login-box input, #register-box input, #forgot-box input, #registerForm input[type="file"] {
+ width: 90%; padding: 10px; margin: 12px 0; border: 1px solid #bbb; border-radius: 4px;
+}
+#login-box button, #register-box button, #forgot-box button {
+ margin-top: 14px; padding: 10px 24px; border: none; background: #1f6aad; color: white;
+ border-radius: 4px; cursor: pointer;
+}
+nav {
+ display: flex; gap: 13px; margin-bottom: 20px; flex-wrap: wrap;
+}
+nav button {
+ background: #e6effe; color: #1f6aad; padding: 8px 17px; border-radius: 6px; font-size: 17px;
+ border: none; cursor: pointer; transition: background 0.18s;
+}
+nav button:hover { background: #1f6aad; color: #fff; }
+section, #profileSec, #materialsSec, #shopsSec, #laborSec, #orderSec {
+ padding: 18px 8px; border-radius: 10px; background: #fff; margin-top: 18px;
+}
+.material-table, .shop-table, .labor-table, .order-table {
+ width: 100%; border-collapse: collapse; margin-top: 14px;
+}
+.material-table th, .material-table td,
+.shop-table th, .shop-table td,
+.labor-table th, .labor-table td,
+.order-table th, .order-table td {
+ border: 1px solid #daf; padding: 8px; text-align: left; font-size: 14px;
+}
+.backBtn, .orderBtn {
+ margin: 14px 0 0 0; padding: 7px 20px; border: none; background: #e6effe; color: #1f6aad;
+ border-radius: 4px; cursor: pointer; font-weight: bold;
+}
+.orderBtn { background: #157952; color: #fff; }
+.backBtn:hover, .orderBtn:hover { background: #1f6aad; color: #fff; }
+.profile-photo { width: 70px; height: 70px; border-radius: 50%; object-fit: cover; margin-bottom: 12px; }
+.cart-summary { margin-top: 10px; background: #e9ffee; padding: 10px; border-radius: 6px; }

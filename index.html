@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BuildMate Construction</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r151/three.min.js"></script>
+</head>
+<body>
+<div id="logo-background"></div>
+<div id="background3d"></div>
+<header>
+<img src="create a stylish log.png" alt="Logo" class="main-logo" />
+<span class="logo-text">BuildMate</span>
+<div class="header-actions">
+<button id="logoutBtn" style="display:none;">Logout</button>
+</div>
+</header>
+<div id="main-container">
+<!-- Login -->
+<div id="login-box">
+<h2>Login</h2>
+<form id="loginForm">
+  <input type="text" id="username" placeholder="Username / Email / Phone"/>
+  <input type="password" id="password" placeholder="Password"/>
+  <button type="submit">Login</button>
+</form>
+<button id="showRegisterBtn">Create Account</button>
+<a href="#" id="showForgotBtn">Forgot Password?</a>
+<p id="login-error"></p>
+</div>
+<!-- Register -->
+<div id="register-box" style="display:none;">
+<h2>Register</h2>
+<form id="registerForm">
+  <input type="text" id="regName" placeholder="Full Name" required />
+  <input type="email" id="regEmail" placeholder="Email" required />
+  <input type="password" id="regPassword" placeholder="Password" required />
+  <input type="text" id="regAddress" placeholder="Address" required />
+  <input type="text" id="regPhone" placeholder="Phone Number" required />
+  <input type="file" id="regPhoto" accept="image/*" />
+  <button type="submit">Register</button>
+</form>
+<button id="backToLoginBtn">Back</button>
+<p id="register-error"></p>
+</div>
+<!-- Forgot Password -->
+<div id="forgot-box" style="display:none;">
+<h2>Forgot Password</h2>
+<form id="forgotForm">
+  <input type="email" id="forgotEmail" placeholder="Enter your email" />
+  <button type="submit">Reset Password</button>
+</form>
+<button id="backToLoginBtn2">Back</button>
+<p id="forgot-msg"></p>
+</div>
+<!-- Dashboard -->
+<div id="dashboard" style="display:none;">
+<nav>
+  <button id="profileTab">Profile</button>
+  <button id="materialsTab">Materials</button>
+  <button id="shopsTab">Shops</button>
+  <button id="laborTab">Labors</button>
+  <button id="orderTab">Cart / Order</button>
+</nav>
+<div id="profileSec"></div>
+<div id="materialsSec" style="display:none"></div>
+<div id="shopsSec" style="display:none"></div>
+<div id="laborSec" style="display:none"></div>
+<div id="orderSec" style="display:none;"></div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
